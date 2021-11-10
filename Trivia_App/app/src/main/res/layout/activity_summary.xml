@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Summary">
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMMARY"
+        android:textStyle="bold"
+        android:layout_above="@+id/here_are_answers"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/here_are_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are the answers selected:"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_above="@+id/hello"
+        />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="20sp"
+        android:layout_above="@+id/cricketer"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/cricketer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:text="Who is the best cricketer in the world?"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cricketer"
+        android:layout_marginStart="20dp"
+        android:text="Adam Gilchirst"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/nationalflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit2"
+        android:layout_marginTop="20dp"
+        android:text="What are the colors in the national flag?"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/edit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nationalflag"
+        android:layout_marginStart="20dp"
+        android:text="White"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/button_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit3"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finish"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/next"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="@drawable/next"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

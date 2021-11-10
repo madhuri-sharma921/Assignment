@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    android:padding="10dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/game_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAME 1 : 15th March 2:00 pm"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Rahul Singh"
+            android:textSize="20sp"
+            android:layout_below="@+id/game_time"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/cricketer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name"
+            android:text="Who is the best cricketer in the world?"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/edit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cricketer"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:text="Answer: Adam Gilchirst"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/nationalflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit2"
+            android:layout_marginTop="10dp"
+            android:text="What are the colors in the national flag?"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/edit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nationalflag"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:text="Answers: White,Yellow"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
